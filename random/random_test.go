@@ -5,9 +5,14 @@ import (
 	"testing"
 )
 
-func TestRandomNum(t *testing.T) {
+func TestHex(t *testing.T) {
+	val := random.Hex(10)
+
+	t.Log(val)
+}
+func TestRandomInteger(t *testing.T) {
 
 	val := random.RandomInteger(10)
 
-	println(val)
+	t.Log(val)
 }
